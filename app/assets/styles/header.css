@@ -6,13 +6,17 @@
     box-sizing: border-box;
     font-family: 'Montserrat', 'sans-serif';
 }
+
 .header {
-    height: 100vh;
-    background-image: url(../imgs/header.jpg);
+    background-image: url(../img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
+    opacity: 1;
+    width: 100%;
 }
+
 .header-content {
     position: absolute;
     bottom: 120px;
@@ -21,11 +25,26 @@
     font-size: 32px;
     color: wheat;
 }
+
 h1 {
-    /* font-size: 42px; */
+    font-size: 1.25em;
     font-weight: 700;
 }
+
 h2 {
-    /* font-size: 34px; */
+    font-size: 1em;
     font-weight: 400;
+    text-shadow: 1px 1px 1px black;
+}
+
+.overlay {
+    background-color: rgb(68, 49, 49, 0.1);
+    height: 100%;
+    opacity: 0.4;
+    transition: .5s ease;
+    width: 100%;
+}
+
+.header:hover .overlay {
+    opacity: 1;
 }
