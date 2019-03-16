@@ -46,6 +46,7 @@
 }
 
 .about-img-idv {
+    border: 1px solid rgba(31, 31, 31, 1);
     box-sizing: content-box;
     /* object-fit: cover; */
     height: 100%;
